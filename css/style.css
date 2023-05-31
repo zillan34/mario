@@ -5,12 +5,13 @@
 }
 
 .game-board {
-    width: 70%;
+    width: 100%;
     height: 500px;
-    border: 1.5px solid #333;
+    border-bottom: 10px solid #11b339;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(#87cbeb, #e0f6ff);
 
 }
 
@@ -30,6 +31,23 @@
 
 .jump {
     animation: jump 500ms ease-out;
+}
+
+.clouds {
+    position: absolute;
+    width: 350px;
+    animation: clouds-animation 10s infinite linear;
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -250px;
+
+    }
+    to {
+        right: 100%;
+
+    }
 }
 
 @keyframes pipe-animation {
